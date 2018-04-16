@@ -9,7 +9,8 @@
 //#import <React/RCTBridgeModule.h>
 //#import <React/RCTEventEmitter.h>
 
-#import "RCTBridgeModule.h"
+// Causes redefinition error for RCTInfoMethod
+// #import "RCTBridgeModule.h"
 #import "RCTEventEmitter.h"
 
 @interface ReactNativeTvosController : RCTEventEmitter <RCTBridgeModule, UIGestureRecognizerDelegate>
